@@ -1,16 +1,23 @@
 <template>
   <div id="app">
-    <MyHeader/>
+  <home/>
     <!-- <router-view /> -->
   </div>
 </template>
 
 <script>
-import MyHeader from "./public/MyHeader";
+import home from "./home/index";
+
 export default {
   name: "app",
   components:{
-    MyHeader
+    home
   }
 };
 </script>
+<style>
+  body{
+    background-color: #eee;
+  }
+</style>
+

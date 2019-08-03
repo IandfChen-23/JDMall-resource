@@ -25,7 +25,7 @@ module.exports = env => {
   }
   return {
     entry: {
-      app: './app/js/main.js'
+      app: ['./app/js/viewport.js','./app/js/main.js']
     },
     devServer: {
       contentBase: './dist',
@@ -40,7 +40,23 @@ module.exports = env => {
         {
           test: /\.html$/,
           loader: 'html-loader'
-        }, {
+        }, 
+        {
+          test: /.(png|jpg|gif|jpeg)$/,
+          use:'file-loader'
+        },
+        {
+          test: /\.css$/,
+          use:[
+            {
+              loader: 'style-loader'
+            },
+            {
+              loader: 'css-loader'
+            }
+          ]
+        },
+        {
           test: /\.vue$/,
           loader: 'vue-loader',
           options: {

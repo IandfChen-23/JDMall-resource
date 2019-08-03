@@ -1,49 +1,62 @@
 <template>
-   <section class="swiper">
-       <swiper :options='options'>
-           <swiper-slider v-for="item in items" :key="item.href">
-               <router-link :to="{name:item.href}">
-                   <img :src="item.src" >
-               </router-link>
-           </swiper-slider>
-            <div class="swiper-pagination"  v-if="options.pagination"></div>
-       </swiper>
-   </section>
+  <section class="swiper">
+    <swiper :options="options">
+      <swiper-slide  v-for="item in items" :key="item.src">
+        <router-link :to="{name:item.href}">
+          <img :src="item.src" />
+        </router-link>
+      </swiper-slide >
+      <div class="swiper-pagination" v-if="options.pagination"></div>
+    </swiper>
+  </section>
 </template>
 <script>
-import Vue from 'vue'
-import {swiper,swiperSlider} from 'vue-awesome-swiper'
-
-
-Vue.use(VueAwesomeSwiper, /* { default global options } */)
+import Vue from "vue";
+import VueAwesomeSwiper from "vue-awesome-swiper";
+import "swiper/dist/css/swiper.css";
+Vue.use(VueAwesomeSwiper);
+import { swiper, swiperSlide } from "vue-awesome-swiper";
 export default {
-    components:{
-        swiper,
-        swiperSlider
-    },
-    props:{
-        options:{
-            type:Object,
-            default(){
-                return {
-                   atuoplay:true,
-                   loop:true,
-                   pagination:{
-                       el:'.swiper-pagination'
-                   },
-                   notNextTick:false
-                }
-            }
+  name: "Slider",
+  components: {
+    swiper,
+    swiperSlide
+  },
+  props: {
+    options: {
+      type: Object,
+      default() {
+        return {
+        notNextTick: true,
+        autoplay: true,
+        preloadImages: false,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 5,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          bulletClass: "my-bullet",
+          bulletActiveClass: "my-bullet-active"
         },
-        items:{
-            type:Array,
-            default(){
-                return [{href:'',src:''}]
-            }
-        }
+        spaceBetween: 30,
+        observeParents: true,
+        observer: true
+        };
+      }
+    },
+    items: {
+      type: Array,
+      default() {
+        return [{ href: "", src: "" }];
+      }
     }
-}
+  }
+};
 </script>
 <style>
-@import '~swiper/dist/css/swiper.css'
+ .swiper{
+     width: 100%;
+ }
 </style>

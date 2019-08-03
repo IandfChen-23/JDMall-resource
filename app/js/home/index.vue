@@ -1,11 +1,22 @@
 <template lang="html">
-    <div :class="$style.home">
-        <h1>Home</h1>
+    <div>
+      <MyHeader/>
+      <MySlider/>
+      <New/>
     </div>
 </template>
 
 <script>
+import MyHeader from './MyHeader'
+import MySlider from './MySlider'
+import New from './New'
 export default {
+  name:'home',
+  components:{
+    MyHeader,
+    MySlider,
+    New
+  }
 }
 </script>
 
