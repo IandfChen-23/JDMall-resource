@@ -3,6 +3,8 @@
       <MyHeader/>
       <MySlider/>
       <New/>
+      <Money/>
+      <Product/>
     </div>
 </template>
 
@@ -10,12 +12,16 @@
 import MyHeader from './MyHeader'
 import MySlider from './MySlider'
 import New from './New'
+import Money from './Money'
+import Product from './Product'
 export default {
   name:'home',
   components:{
     MyHeader,
     MySlider,
-    New
+    New,
+    Money,
+    Product
   }
 }
 </script>
