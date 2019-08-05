@@ -1,15 +1,18 @@
 <template lang="html">
     <div>
-     money
+     <MSlider/>
+     <Money/>
     </div>
 </template>
 
 <script>
-
+import MSlider from './MSlider'
+import Money from '../home/Money'
 export default {
-  name:'Money',
+  name:'MoneyProduct',
   components:{
-   
+   MSlider,
+   Money
   }
 }
 </script>

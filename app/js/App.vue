@@ -1,18 +1,21 @@
 <template>
   <div id="app">
+  <my-header/>
  <router-view />
   <NavBar/>
   </div>
 </template>
 
 <script>
-import home from "./home/index";
+
 import NavBar from "./public/navbar";
 import router from "./router/index"
+import MyHeader from './public/MyHeader'
 export default {
   name: "app",
   components:{
-    NavBar
+    NavBar,
+    MyHeader
   }
 };
 </script>
