@@ -15,7 +15,7 @@ import New from './New'
 import Money from './Money'
 import Product from './Product'
 export default {
-  name:'home',
+  name:'Home',
   components:{
     MyHeader,
     MySlider,

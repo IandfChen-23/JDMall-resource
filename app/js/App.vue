@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-  <home/>
+ <router-view />
   <NavBar/>
-    <!-- <router-view /> -->
   </div>
 </template>
 
 <script>
 import home from "./home/index";
 import NavBar from "./public/navbar";
+import router from "./router/index"
 export default {
   name: "app",
   components:{
-    home,
     NavBar
   }
 };
