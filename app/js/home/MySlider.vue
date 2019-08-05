@@ -83,4 +83,9 @@ export default {
     }
   }
 }
+.swiper{
+  img{
+    width: 100%;
+  }
+}
 </style>

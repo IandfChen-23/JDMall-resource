@@ -12,7 +12,8 @@ import NavBar from "./public/navbar";
 export default {
   name: "app",
   components:{
-    home
+    home,
+    NavBar
   }
 };
 </script>
