@@ -1,6 +1,6 @@
 <template>
   <article>
-    <Slider :items="items" />
+    <Slider :items="items" class="homeSlider" />
     <section class="list">
       <div class="item" v-for="item in enters" :key="item.img">
         <router-link :to="{name:item.href}">
@@ -61,6 +61,9 @@ export default {
 };
 </script>
 <style lang="scss">
+.homeSlider{
+  margin-top: 100px;
+}
 @import "../../css/element.scss";
 .list {
   @include list(row);
