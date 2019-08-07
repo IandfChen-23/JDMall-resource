@@ -3,7 +3,6 @@ import Router from "vue-router"
 import Home from "../home/index.vue"
 import Money from "../money/index.vue"
 import Zhongchou from "../zhongchou/index.vue"
-import Baitiao from "../baitiao/index.vue"
 import My from "../my/index.vue"
 Vue.use(Router)
 
@@ -22,10 +21,6 @@ export default new Router({
         {
             path: "/zhongchou",
             component: Zhongchou,
-        },
-        {
-            path: "/baitiao",
-            component: Baitiao,
         },
         {
             path: "/my",

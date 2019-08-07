@@ -12,12 +12,7 @@
         <p>理财</p>
       </router-link>
     </li>
-    <li>
-      <router-link to='baitiao' exact>
-        <img src="../../image/baitiao.png" />
-        <p>白条</p>
-      </router-link>
-    </li>
+    
     <li>
       <router-link to='zhongchou' exact>
         <img src="../../image/zhongchou.png" />

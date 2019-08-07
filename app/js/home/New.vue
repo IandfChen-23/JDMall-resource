@@ -55,7 +55,6 @@ export default {
     .item {
       &:first-child {
         width: 50%;
-
         padding: 32px 20px;
         img {
           width: 100px;
