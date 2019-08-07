@@ -40,6 +40,7 @@ export default {
 <style lang="scss">
 .zhongchou {
   margin-top: 100px;
+  padding-top: 12px;
   img {
     width: 30%;
   }
@@ -49,7 +50,7 @@ export default {
       height: 50px;
       overflow: hidden;
       line-height: 50px;
-      font-size: 24px;
+      font-size: 28px;
       padding-left: 10px;
       vertical-align: center;
   }
