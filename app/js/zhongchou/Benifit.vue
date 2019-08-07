@@ -19,10 +19,11 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style lang="scss" >
 @import "../../css/element.scss";
 .panel {
   @include panel;
+  overflow:hidden;  
   box-sizing: border-box;
   .content {
     height: 240px;
