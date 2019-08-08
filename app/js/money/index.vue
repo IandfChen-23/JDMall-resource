@@ -1,22 +1,22 @@
 <template lang="html">
     <div>
-     <MSlider/>
-     <Money/>
+        <MSlider/>
+        <my-money/>
     </div>
 </template>
 
 <script>
-import MSlider from './MSlider'
-import Money from '../home/Money'
+import MSlider from "./MSlider"
+import MyMoney from "./MyMoney"
 export default {
-  name:'MoneyProduct',
-  components:{
-   MSlider,
-   Money
-  }
+    name: "MoneyProduct",
+    components: {
+        MSlider,
+        MyMoney,
+    },
 }
 </script>
 
-<style lang="scss" module>
- 
+<style lang="scss" scoped>
+
 </style>

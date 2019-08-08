@@ -2,7 +2,7 @@
     <panel title="潮牌推荐" class="panel">
         <ul>
             <li v-for="item in recommands" :key="item.title">
-                <img :src="item.src" >
+                <img v-lazy="item.src" >
                 <div class="title">{{ item.title }}</div>
                 <div class="desc">{{ item.desc }}</div>
                 <div class="price">{{ item.price }}</div>
@@ -56,7 +56,7 @@ export default {
                     desc: " 抗菌除臭 ",
                     price: 59.99,
                 },
-                 {
+                {
                     src: require("../../image/recommand3.jpg"),
                     title: "纯天然五谷香米T",
                     desc: " 抗菌除臭 ",
@@ -68,7 +68,7 @@ export default {
                     desc: " 抗菌除臭 ",
                     price: 59.99,
                 },
-                 {
+                {
                     src: require("../../image/recommand4.jpg"),
                     title: "纯天然五谷香米T",
                     desc: " 抗菌除臭 ",
@@ -80,7 +80,7 @@ export default {
                     desc: " 抗菌除臭 ",
                     price: 59.99,
                 },
-                 {
+                {
                     src: require("../../image/recommand1.jpg"),
                     title: "纯天然五谷香米T",
                     desc: " 抗菌除臭 ",
@@ -92,6 +92,210 @@ export default {
                     desc: " 抗菌除臭 ",
                     price: 59.99,
                 },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                 {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
             ],
         }
     },
@@ -102,7 +306,7 @@ export default {
 .panel {
   @include panel;
   box-sizing: border-box;
-  height: 62rem;
+ 
 
   ul {
     display: flex;
@@ -130,17 +334,33 @@ export default {
 }
 .title{
   margin-top: 8px;
-    font-size: 28px;
+    font-size: 14px !important;
     font-weight: 800;
 }
 .desc{
   padding: 10px 0 0 0;
   color: #666;
-  font-size: 24px;
+  font-size: 12px !important;
 }
 .price{
   padding:  0;
   color: rgb(245, 47, 52);
+  font-size: 16px !important;
+}
+img[lazy=loading]{
+  transform:scaleX(0.3) scaleY(0.5);
+}
+img[lazy=loaded]{
+  animation:appear 0.3s;
+  animation-fill-mode: both;
+}
+@keyframes appear {
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
 }
 </style>
 

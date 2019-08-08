@@ -1,38 +1,38 @@
 <template>
-  <ul class="nav-content">
-    <li>
-      <router-link to="/" exact>
-        <img src="../../image/home.png" />
-        <p>首页</p>
-      </router-link>
-    </li>
-    <li>
-      <router-link to="/money" exact>
-        <img src="../../image/money.png" />
-        <p>理财</p>
-      </router-link>
-    </li>
-    
-    <li>
-      <router-link to='zhongchou' exact>
-        <img src="../../image/zhongchou.png" />
-        <p>众筹</p>
-      </router-link>
-    </li>
-    <li>
-      <router-link to='my' exact>
-        <img src="../../image/my.png" />
-        <p>我的</p>
-      </router-link>
-    </li>
-  </ul>
+    <ul class="nav-content">
+        <li>
+            <router-link to="/" exact>
+                <img src="../../image/home.png" >
+                <p>首页</p>
+            </router-link>
+        </li>
+        <li>
+            <router-link to="/money" exact>
+                <img src="../../image/money.png" >
+                <p>理财</p>
+            </router-link>
+        </li>
+
+        <li>
+            <router-link to="zhongchou" exact>
+                <img src="../../image/zhongchou.png" >
+                <p>众筹</p>
+            </router-link>
+        </li>
+        <li>
+            <router-link to="my" exact>
+                <img src="../../image/my.png" >
+                <p>产品</p>
+            </router-link>
+        </li>
+    </ul>
 </template>
 <script>
 export default {
-  name: "navbar"
-};
+    name: "Navbar",
+}
 </script>
-<style lang="scss" >
+<style lang="scss" scoped >
 @import "../../css/element.scss";
 .nav-content {
   width: 100%;
