@@ -14,6 +14,7 @@ export default {
   data() {
     return {
       options:{
+        autoplay:true,
           effect: 'coverflow',
           grabCursor: true,
           centeredSlides: true,
