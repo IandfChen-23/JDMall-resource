@@ -1,65 +1,65 @@
 <template>
-  <panel title="潮牌推荐" class="panel">
-    <ul>
-      <li v-for="item in recommands" :key="item.title">
-        <img :src="item.src" />
-        <div class="title">{{item.title}}</div>
-        <div class="desc">{{item.desc}}</div>
-        <div class="price">{{item.price}}</div>
-      </li>
-    </ul>
-  </panel>
+    <panel title="潮牌推荐" class="panel">
+        <ul>
+            <li v-for="item in recommands" :key="item.title">
+                <img :src="item.src" >
+                <div class="title">{{ item.title }}</div>
+                <div class="desc">{{ item.desc }}</div>
+                <div class="price">{{ item.price }}</div>
+            </li>
+        </ul>
+    </panel>
 </template>
 <script>
-import Panel from "../core/panel";
+import Panel from "../core/panel"
 export default {
-  name: "QianDao",
-  components: {
-    Panel
-  },
-  data() {
-    return {
-      recommands: [
-        {
-          src: require("../../image/recommand0.jpg"),
-          title: "银离子速干致冷抗菌T",
-          desc: " 抗菌除臭 ",
-          price: 19.99
-        },
-        {
-          src: require("../../image/recommand1.jpg"),
-          title: "纯天然五谷香米",
-          desc: " 五谷稻米 ",
-          price: 29.99
-        },
-        {
-          src: require("../../image/recommand2.jpg"),
-          title: "银离子高温杀菌酸奶",
-          desc: " 纯真酸奶 ",
-          price: 39.99
-        },
-        {
-          src: require("../../image/recommand0.jpg"),
-          title: "银离子速干致冷抗菌T",
-          desc: " 抗菌除臭 ",
-          price: 19.99
-        },
-        {
-          src: require("../../image/recommand1.jpg"),
-          title: "纯天然五谷香米T",
-          desc: " 抗菌除臭 ",
-          price: 49.99
-        },
-        {
-          src: require("../../image/recommand2.jpg"),
-          title: "银离子高温杀菌酸奶",
-          desc: " 抗菌除臭 ",
-          price:59.99
+    name: "QianDao",
+    components: {
+        Panel,
+    },
+    data() {
+        return {
+            recommands: [
+                {
+                    src: require("../../image/recommand0.jpg"),
+                    title: "银离子速干致冷抗菌T",
+                    desc: " 抗菌除臭 ",
+                    price: 19.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米",
+                    desc: " 五谷稻米 ",
+                    price: 29.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 纯真酸奶 ",
+                    price: 39.99,
+                },
+                {
+                    src: require("../../image/recommand0.jpg"),
+                    title: "银离子速干致冷抗菌T",
+                    desc: " 抗菌除臭 ",
+                    price: 19.99,
+                },
+                {
+                    src: require("../../image/recommand1.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+            ],
         }
-      ]
-    };
-  }
-};
+    },
+}
 </script>
 <style lang="scss" scoped>
 @import "../../css/element.scss";
@@ -67,7 +67,7 @@ export default {
   @include panel;
   box-sizing: border-box;
   height: 34rem;
-  margin-bottom: 4rem;
+
   ul {
     display: flex;
     flex-wrap: wrap;

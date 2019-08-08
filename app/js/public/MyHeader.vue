@@ -1,20 +1,20 @@
 <template>
-   <div class="MyHeader">
-       <span class="left">
-           <em>注册</em>&nbsp;&nbsp;|&nbsp;&nbsp;<em>登陆</em>
-       </span>
-       <btn class="right">APP下载</btn>
-   </div>
+    <div class="MyHeader">
+        <span class="left">
+            <em>注册</em>&nbsp;&nbsp;|&nbsp;&nbsp;<em>登陆</em>
+        </span>
+        <btn class="right">APP下载</btn>
+    </div>
 </template>
 <script>
-import btn from '../core/btn'
+import btn from "../core/btn"
 export default {
-    components:{
-        btn
+    components: {
+        btn,
     },
 }
 </script>
-<style lang='scss'>
+<style lang='scss' scoped>
 @import '../../css/element.scss';
  .MyHeader{
     color: #666;
