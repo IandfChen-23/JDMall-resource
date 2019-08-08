@@ -39,12 +39,48 @@ export default {
                     price: 39.99,
                 },
                 {
-                    src: require("../../image/recommand0.jpg"),
-                    title: "银离子速干致冷抗菌T",
-                    desc: " 抗菌除臭 ",
-                    price: 19.99,
+                    src: require("../../image/recommand3.jpg"),
+                    title: "驱鼠黑科技空间驱鼠器",
+                    desc: " 国际领先 ",
+                    price: 199.99,
                 },
                 {
+                    src: require("../../image/recommand4.jpg"),
+                    title: "多功能迷你剃须刀",
+                    desc: " 值得拥有 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand2.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                 {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand0.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                 {
+                    src: require("../../image/recommand4.jpg"),
+                    title: "纯天然五谷香米T",
+                    desc: " 抗菌除臭 ",
+                    price: 49.99,
+                },
+                {
+                    src: require("../../image/recommand3.jpg"),
+                    title: "银离子高温杀菌酸奶",
+                    desc: " 抗菌除臭 ",
+                    price: 59.99,
+                },
+                 {
                     src: require("../../image/recommand1.jpg"),
                     title: "纯天然五谷香米T",
                     desc: " 抗菌除臭 ",
@@ -66,7 +102,7 @@ export default {
 .panel {
   @include panel;
   box-sizing: border-box;
-  height: 34rem;
+  height: 62rem;
 
   ul {
     display: flex;
