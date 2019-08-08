@@ -2,9 +2,9 @@
     <div id="app">
         <my-header/>
         <router-view />
-        <my-footer/>  
+        <my-footer/>
         <NavBar/>
-        
+
     </div>
 </template>
 
@@ -23,9 +23,13 @@ export default {
     },
 }
 </script>
-<style>
+<style lang='scss'>
+@import "../css/element.scss";
+@import "../css/reset.scss";
   body{
+     @include panel;
     background-color: #eee;
+
   }
 </style>
 

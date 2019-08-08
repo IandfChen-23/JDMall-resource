@@ -1,7 +1,7 @@
 <template>
-  <panel title="理财精选" class="panel">
-    <section class="content">
-      <dl class="item" v-for="item in items" :key="item.title">
+  <panel title="理财精选" class="money-panel">
+    <section class="money-content">
+      <dl class="money-item" v-for="item in items" :key="item.title">
         <dt>{{item.title}}<span class="sub">{{item.sub}}</span></dt>
         <dd>{{item.rate}}</dd>
         <dd>{{item.text}}</dd>
@@ -50,13 +50,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../css/element.scss";
-.panel{
+.money-panel{
     @include panel;
-    .content{
+    .money-content{
         @include flex(row);
         justify-content: space-around;
         box-sizing: border-box;
-        .item{
+        .money-item{
             position: relative;
             width:50%;
             padding: 34px 16px;

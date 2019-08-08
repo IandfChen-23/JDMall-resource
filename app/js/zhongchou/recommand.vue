@@ -1,5 +1,5 @@
 <template>
-    <panel title="潮牌推荐" class="panel">
+    <panel title="潮牌推荐" class="zhong-panel">
         <ul>
             <li v-for="item in recommands" :key="item.title">
                 <img v-lazy="item.src" >
@@ -290,7 +290,7 @@ export default {
                     desc: " 抗菌除臭 ",
                     price: 59.99,
                 },
-                 {
+                {
                     src: require("../../image/recommand1.jpg"),
                     title: "纯天然五谷香米T",
                     desc: " 抗菌除臭 ",
@@ -303,10 +303,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../css/element.scss";
-.panel {
+.zhong-panel {
   @include panel;
   box-sizing: border-box;
- 
+
 
   ul {
     display: flex;

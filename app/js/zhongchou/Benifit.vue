@@ -1,6 +1,6 @@
 <template>
-  <panel title="优惠福利" class="panel">
-    <section class="content">
+  <panel title="优惠福利" class="benifit-panel">
+    <section class="benifit-content">
       <img src="../../image/youhui1.png" alt />
       <img src="../../image/youhui2.png" alt />
     
@@ -21,11 +21,11 @@ export default {
 </script>
 <style lang="scss" >
 @import "../../css/element.scss";
-.panel {
+.benifit-panel {
   @include panel;
   overflow:hidden;  
   box-sizing: border-box;
-  .content {
+  .benifit-content {
     height: 240px;
     img {
       position: absolute;
