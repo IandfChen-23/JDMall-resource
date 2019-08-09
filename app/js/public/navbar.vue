@@ -20,9 +20,9 @@
             </router-link>
         </li>
         <li>
-            <router-link to="my" exact>
+            <router-link to="ShoppingCart" exact>
                 <img src="../../image/my.png" >
-                <p>产品</p>
+                <p>购物车</p>
             </router-link>
         </li>
     </ul>

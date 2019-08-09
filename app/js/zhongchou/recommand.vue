@@ -5,7 +5,8 @@
                 <img v-lazy="item.src" >
                 <div class="title">{{ item.title }}</div>
                 <div class="desc">{{ item.desc }}</div>
-                <div class="price">{{ item.price }}</div>
+                <span class="price">{{ item.price }}</span>
+                <button class="gouwu">加入购物车</button>
             </li>
         </ul>
     </panel>
@@ -307,15 +308,15 @@ export default {
   @include panel;
   box-sizing: border-box;
 
-
   ul {
     display: flex;
     flex-wrap: wrap;
     li {
       width: 50%;
+      margin-bottom: 10px;
       &:nth-child(even) {
         box-sizing: border-box;
-        padding:0 20px;
+        padding: 0 20px;
         left: 0;
         img {
           width: 100%;
@@ -324,7 +325,7 @@ export default {
       &:nth-child(odd) {
         box-sizing: border-box;
         right: 0;
-        padding:0 20px;
+        padding: 0 20px;
         img {
           width: 100%;
         }
@@ -332,35 +333,47 @@ export default {
     }
   }
 }
-.title{
+.title {
   margin-top: 8px;
-    font-size: 14px !important;
-    font-weight: 800;
+  font-size: 14px !important;
+  font-weight: 800;
 }
-.desc{
+.desc {
   padding: 10px 0 0 0;
   color: #666;
   font-size: 12px !important;
 }
-.price{
-  padding:  0;
+.price {
+  padding: 0;
   color: rgb(245, 47, 52);
-  font-size: 16px !important;
+  font-size: 20px !important;
 }
-img[lazy=loading]{
-  transform:scaleX(0.3) scaleY(0.5);
+img[lazy="loading"] {
+  transform: scaleX(0.3) scaleY(0.5);
 }
-img[lazy=loaded]{
-  animation:appear 0.3s;
+img[lazy="loaded"] {
+  animation: appear 0.3s;
   animation-fill-mode: both;
 }
 @keyframes appear {
-  from{
-    opacity:0;
+  from {
+    opacity: 0;
   }
-  to{
-    opacity:1;
+  to {
+    opacity: 1;
   }
+}
+.gouwu {
+  border-radius: 1.04688rem;
+
+  text-align: center;
+  font-size:18px;
+  color: #fff;
+  letter-spacing: 0;
+  background-image: linear-gradient(-129deg, #ff6b00, #ff6f00);
+  width: 3rem;
+  height: 1.2rem;
+  float:right;
 }
 </style>
 

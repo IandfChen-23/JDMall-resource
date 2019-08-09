@@ -3,19 +3,19 @@ import Router from "vue-router"
 import Home from "../home/index.vue"
 import Money from "../money/index.vue"
 import Zhongchou from "../zhongchou/index.vue"
-import My from "../my/index.vue"
+import ShoppingCart from "../shoppingCart/index.vue"
 Vue.use(Router)
 
 export default new Router({
     routes: [
         {
             path: "/",
-            name:'home',
+            name: "home",
             component: Home,
         },
         {
             path: "/money",
-            name:'money',
+            name: "money",
             component: Money,
         },
         {
@@ -23,8 +23,8 @@ export default new Router({
             component: Zhongchou,
         },
         {
-            path: "/my",
-            component: My,
+            path: "/shoppingCart",
+            component: ShoppingCart,
         },
     ],
 })
