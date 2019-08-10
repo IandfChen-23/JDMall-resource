@@ -20,6 +20,7 @@ export default new Router({
         },
         {
             path: "/zhongchou",
+            name:"zhongchou",
             component: Zhongchou,
         },
         {

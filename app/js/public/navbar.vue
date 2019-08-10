@@ -16,12 +16,12 @@
         <li>
             <router-link to="zhongchou" exact>
                 <img src="../../image/zhongchou.png" >
-                <p>众筹</p>
+                <p>商城</p>
             </router-link>
         </li>
         <li>
             <router-link to="ShoppingCart" exact>
-                <img src="../../image/my.png" >
+                <img src="../../image/cart.png" >
                 <p>购物车</p>
             </router-link>
         </li>

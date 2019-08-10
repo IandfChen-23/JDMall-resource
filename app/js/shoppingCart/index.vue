@@ -3,7 +3,10 @@
     <div v-if="!cartProducts.length" class="kong">
       <img src="../../image/cart.png" alt class="cart-img" />
       <div class="cart-desc">你的购物车还是空的</div>
-      <button class="cart-button">马上去购物</button>
+      <router-link :to="{name:'zhongchou'}">
+    <button class="cart-button">马上去购物</button>
+      </router-link>
+      
     </div>
     <table class="table table-striped" v-if="cartProducts.length">
       <caption style="text-align:center;font-weight:800;margin:50px">已购商品</caption>
