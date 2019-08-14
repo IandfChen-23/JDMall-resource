@@ -14,7 +14,7 @@
         </li>
 
         <li>
-            <router-link to="zhongchou" exact>
+            <router-link to="mall" exact>
                 <img src="../../image/zhongchou.png" >
                 <p>商城</p>
             </router-link>
